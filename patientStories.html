@@ -22,6 +22,40 @@
                 Siyang Yang<br>
                 Oct 25, 2021
             </p>
+             <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="jerry1.png" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+  
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="jerry2.png" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+  
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="jerry3.png" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+  
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+  
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div> 
 
             <h2>Yang family – Jerry & Lillian</h2>
             <p>Lillian Yang, a 7-year-old Chinese girl, seemed like a healthy little girl until she was diagnosed with acute myeloid leukemia in September 2020 after experiencing paleness and red spots, which are symptoms of low platelet count. A skin biopsy revealed that a genetic mutation caused Lillian and her older brother Jerry to be predisposed to AML. Lillian went through four rounds of chemotherapy, but the best cure for AML was a bone marrow transplant. Unfortunately, because patients are most likely to have a bone marrow match with someone of the same ethnicity and there are few Chinese donors, Lillian only had a 43% chance of finding a match. Additionally, there were other obstacles, such as the COVID-19 pandemic closing Chinese and Taiwanese registries and the lack of U.S. matches. Yet through all the struggle, Lillian still smiled. She told jokes to her doctors and nurses and dreamed of being a hospital volunteer to help children. Her dad believed that she was the most popular patient on the hospital floor because she was always so happy and lively. </p>
@@ -40,4 +74,35 @@
             </p>
         </div>
     </body>
+
+    <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
+    </script>
 </html>
