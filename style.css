@@ -24,6 +24,11 @@
     text-decoration: none;
 }
 
+.bodyText {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
