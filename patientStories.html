@@ -103,29 +103,77 @@
                 <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
             </div>
+
+            <br>
+
+            <h1>Donor Stories</h1>
+
+            <br>
+
+            <h1>IMPACT</h1>
+            <h3>How families are affected by donors</h3>
+            <div class="slideshow-container" style = "background-color: #e9e9e9; height: 14vh;">
+                <div class="mySlides4">
+                    <h3>"This type of leukemia is very, very aggressive… it put him at very high risk and a bone marrow transplant is the only chance for him to get cured."<br>-Jerry’s mother</h3>
+                </div>
+                  
+                <div class="mySlides4">
+                  <h3>“We cannot describe how much, how precious it was to us, in a time of no hope at all."<br>-Jerry’s father</h3>
+                </div>
+    
+                <div class="mySlides4">
+                 <h3>“She is the person who gave Jerry another chance to live, and she is the reason Jerry is still here today."<br>-Jerry’s mother</h3>
+                </div>
+                  
+                <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+            </div>
+
+            <br>
+
+            <h1>MOTIVE</h1>
+            <h3>Why donors choose to donate</h3>
+            <div class="slideshow-container" style = "background-color: #e9e9e9; height: 14vh;"> 
+                <div class="mySlides5">
+                  <h3>“I honestly think that everyone should do this. Health is just the most important thing for all of us and enables us to live a really good life."<br>-Jerry’s donor</h3>
+                </div>
+              
+                <div class="mySlides5">
+                  <h3>“In a way, I felt like it wasn’t my body, it was something that I was carrying that was supposed to be for someone else."<br>-Jerry’s donor</h3>
+                </div>
+              
+                <div class="mySlides5">
+                  <h3>“If I had a superhero power, that would really be it. To find a cure for all children’s illnesses."<br>-Jerry’s donor</h3>
+                </div>
+              
+                <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+            </div>
         </div>
     </body>
 
     <script>
-let slideIndex = [1, 1, 1];
-let slideId = ["mySlides1", "mySlides2", "mySlides3"]
-showSlides(1, 0);
-showSlides(1, 1);
-showSlides(1, 2);
+      let slideIndex = [1, 1, 1, 1, 1];
+      let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"]
+      showSlides(1, 0);
+      showSlides(1, 1);
+      showSlides(1, 2);
+      showSlides(1, 3);
+      showSlides(1, 4);
 
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
-}
+      function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+      }
 
-function showSlides(n, no) {
-  //let i;
-  let x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex[no]-1].style.display = "block";  
-}
+      function showSlides(n, no) {
+        //let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}    
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        x[slideIndex[no]-1].style.display = "block";  
+      }
     </script>
 </html>
