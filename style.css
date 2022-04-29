@@ -3,6 +3,10 @@ body {
   color: #283034;
 }
 
+a {
+  color: #f4416c;
+}
+
 #header {
     display: flex;
     position: fixed;
