@@ -69,9 +69,14 @@ a {
 }
 
 .bodyText {
-  margin-left: 3vw;
-  margin-right: 3vw;
+  margin-left: 8vw;
+  margin-right: 8vw;
   line-height: 30px;
+}
+
+img {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 * {box-sizing: border-box}
