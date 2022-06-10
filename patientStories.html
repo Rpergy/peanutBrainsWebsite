@@ -16,39 +16,40 @@
         </div>
 
         <div style = "margin-top: 100px" class = "bodyText">
-            <h2>Jerry's Story</h2>
-            <p>
+          <div class = "patientStories" style = "text-align: left;">
+          <button class = "patientAccordion">Jerry's Story</button>
+            <div class = "patientPanel">
+              <div class="slideshow-container">
+                <div class="mySlides1">
+                  <img src="images/jerry1.png" style="width:100%">
+                </div>
+              
+                <div class="mySlides1">
+                  <img src="images/jerry2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides1">
+                  <img src="images/jerry3.png" style="width:100%">
+                </div>
+              
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+              </div> 
+
+              <p>
                 Our son Jerry was diagnosed with high-risk leukemia AML in 2012, and he has had two bone marrow transplants. But like most (about two-thirds) patients, Jerry has suffered from many GVHD post-transplant diseases such as kidney failure, vision impairment, immune system compromise, heart issues, and growth issues. As a result, he has never been able to physically attend school and has been on nightly renal dialysis for over four years now. <br>
                 
                 Thanks to Alliance for Childhood Cancer and Leukemia and Lymphoma Society for their effort in asking for help from many Senators and House representatives in the Congressional Childhood Cancer Caucus to pass and support the STAR Act (CHILDHOOD CANCER SURVIVORSHIP, TREATMENT, ACCESS AND RESEARCH).  The Act has focused on the physical, financial, medical, and emotional needs of all those families with cancer kids.  No child and no family should fight cancer alone!<br>
                 
                 Siyang Yang<br>
-            </p>
-            <div class="slideshow-container">
-            <div class="mySlides1">
-                <img src="images/jerry1.png" style="width:100%">
-            </div>
+              </p>
               
-            <div class="mySlides1">
-              <img src="images/jerry2.png" style="width:100%">
+              <h4>Jerry loves to play Minecraft and runs a YouTube channel with his videos, which you can watch <a href = "https://www.youtube.com/channel/UC0A2acIcWNdUKkNEYVL2nZw">here.</a></h4>
             </div>
-
-            <div class="mySlides1">
-             <img src="images/jerry3.png" style="width:100%">
-            </div>
-              
-            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-            </div> 
-            <h4>Jerry loves to play Minecraft and runs a YouTube channel with his videos, which you can watch <a href = "https://www.youtube.com/channel/UC0A2acIcWNdUKkNEYVL2nZw">here.</a></h4>
-
-            <br>
-
-            <h2>Lillan's Story</h2>
-            <p>Lillian Yang, a 7-year-old Chinese girl, seemed like a healthy little girl until she was diagnosed with acute myeloid leukemia in September 2020 after experiencing paleness and red spots, which are symptoms of low platelet count. A skin biopsy revealed that a genetic mutation caused Lillian and her older brother Jerry to be predisposed to AML. Lillian went through four rounds of chemotherapy, but the best cure for AML was a bone marrow transplant. Unfortunately, because patients are most likely to have a bone marrow match with someone of the same ethnicity and there are few Chinese donors, Lillian only had a 43% chance of finding a match. Additionally, there were other obstacles, such as the COVID-19 pandemic closing Chinese and Taiwanese registries and the lack of U.S. matches. Yet through all the struggle, Lillian still smiled. She told jokes to her doctors and nurses and dreamed of being a hospital volunteer to help children. Her dad believed that she was the most popular patient on the hospital floor because she was always so happy and lively. </p>
-            <br>
-
-            <div class="slideshow-container">
+            <br><br><br>
+            <button class = "patientAccordion">Lillan's Story</button>
+            <div class = "patientPanel">
+              <div class="slideshow-container">
                 <div class="mySlides2">
                   <img src="images/lillian1.png" style="width:100%">
                 </div>
@@ -66,13 +67,17 @@
               
                 <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+              </div>
+
+              <p>Lillian Yang, a 7-year-old Chinese girl, seemed like a healthy little girl until she was diagnosed with acute myeloid leukemia in September 2020 after experiencing paleness and red spots, which are symptoms of low platelet count. A skin biopsy revealed that a genetic mutation caused Lillian and her older brother Jerry to be predisposed to AML. Lillian went through four rounds of chemotherapy, but the best cure for AML was a bone marrow transplant. Unfortunately, because patients are most likely to have a bone marrow match with someone of the same ethnicity and there are few Chinese donors, Lillian only had a 43% chance of finding a match. Additionally, there were other obstacles, such as the COVID-19 pandemic closing Chinese and Taiwanese registries and the lack of U.S. matches. Yet through all the struggle, Lillian still smiled. She told jokes to her doctors and nurses and dreamed of being a hospital volunteer to help children. Her dad believed that she was the most popular patient on the hospital floor because she was always so happy and lively. </p>
+
+              <h4>During her hospital stays, Lillian records videos of telling jokes and also writes poetry, which you can find <a href = "https://www.youtube.com/channel/UC-t7j9Z_2puBxJm-3ApAO_A">here.</a></h4>
             </div>
-
-            <h4>During her hospital stays, Lillian records videos of telling jokes and also writes poetry, which you can find <a href = "https://www.youtube.com/channel/UC-t7j9Z_2puBxJm-3ApAO_A">here.</a></h4>
-
-            <br>
-
-            <h2>Xie Family</h2>
+            
+            <br><br><br>
+            
+            <button class = "patientAccordion" style = "width: 100%;">The Xie Family's Story</button>
+            <div class = "panel">
             <p>Lois Xie's Experience:
                 My dad was diagnosed with myelodysplastic syndrome in March of 2020. He had to live near the University of Kansas Hospital–a forty-five minute drive away– to attend his procedures. He received heart and lung checkups as well as transplant evaluations.
                 Initially, the biggest change was his weakened immune system. We had to stay home so we wouldn’t be exposed to something that would get him sick. Due to COVID-19, everyone had to stay home, so our lives were not completely different from everyone else’s.
@@ -100,7 +105,8 @@
                 <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
             </div>
-
+            </div>
+          </div>
             <br>
 
             <img src = "images/heartDivider.png" style="width: 90vw;/*! padding: 0vw; *//*! margin: 0; */left: -50px;position: relative;">
@@ -181,4 +187,40 @@
         x[slideIndex[no]-1].style.display = "block";  
       }
     </script>
+
+<script>
+  var acc = document.getElementsByClassName("patientAccordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+          /* Toggle between adding and removing the "active" class,
+          to highlight the button that controls the panel */
+          this.classList.toggle("active");
+
+          /* Toggle between hiding and showing the active panel */
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+              panel.style.display = "none";
+          } else {
+              panel.style.display = "block";
+          }
+      });
+  } 
+
+var acc = document.getElementsByClassName("patientAccordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var panel = this.nextElementSibling;
+if (panel.style.maxHeight) {
+panel.style.maxHeight = null;
+} else {
+panel.style.maxHeight = panel.scrollHeight + "px";
+}
+});
+}
+</script>
 </html>
