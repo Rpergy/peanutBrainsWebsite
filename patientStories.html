@@ -17,8 +17,10 @@
 
         <div style = "margin-top: 100px" class = "bodyText">
           <h1>Patient Stories</h1>
-          <div class = "patientStories" style = "text-align: left;">
-          <button class = "patientAccordion">Jerry's Story</button>
+          <div class = "patientStories">
+
+          <div id = "yangFamily" style = "text-align: left;">
+          <button class = "patientAccordion" onclick = "console.log('clicked'); var div = document.getElementById('splitDiv0'); if(div.style.display === 'none') div.style.display = 'block'; else if(div.style.display === 'block') div.style.display = 'none';">Jerry's Story</button>
             <div class = "patientPanel">
               <div class="slideshow-container">
                 <div class="mySlides1">
@@ -47,8 +49,11 @@
               
               <h4>Jerry loves to play Minecraft and runs a YouTube channel with his videos, which you can watch <a href = "https://www.youtube.com/channel/UC0A2acIcWNdUKkNEYVL2nZw">here.</a></h4>
             </div>
-            <br><br><br>
-            <button class = "patientAccordion">Lillan's Story</button>
+
+            <div id = "splitDiv0" style = 'display: none'><br></div>
+            <div id = "splitDiv" style = "display: none;"><br></div>
+
+            <button class = "patientAccordion" onclick = "console.log('clicked'); var div = document.getElementById('splitDiv'); if(div.style.display === 'none') div.style.display = 'block'; else if(div.style.display === 'block') div.style.display = 'none';">Lillan's Story</button>
             <div class = "patientPanel">
               <div class="slideshow-container">
                 <div class="mySlides2">
@@ -73,6 +78,7 @@
               <p>Lillian Yang, a 7-year-old Chinese girl, seemed like a healthy little girl until she was diagnosed with acute myeloid leukemia in September 2020 after experiencing paleness and red spots, which are symptoms of low platelet count. A skin biopsy revealed that a genetic mutation caused Lillian and her older brother Jerry to be predisposed to AML. Lillian went through four rounds of chemotherapy, but the best cure for AML was a bone marrow transplant. Unfortunately, because patients are most likely to have a bone marrow match with someone of the same ethnicity and there are few Chinese donors, Lillian only had a 43% chance of finding a match. Additionally, there were other obstacles, such as the COVID-19 pandemic closing Chinese and Taiwanese registries and the lack of U.S. matches. Yet through all the struggle, Lillian still smiled. She told jokes to her doctors and nurses and dreamed of being a hospital volunteer to help children. Her dad believed that she was the most popular patient on the hospital floor because she was always so happy and lively. </p>
 
               <h4>During her hospital stays, Lillian records videos of telling jokes and also writes poetry, which you can find <a href = "https://www.youtube.com/channel/UC-t7j9Z_2puBxJm-3ApAO_A">here.</a></h4>
+            </div>
             </div>
             
             <br><br><br>
